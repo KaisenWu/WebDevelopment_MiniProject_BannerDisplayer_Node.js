@@ -1,0 +1,84 @@
+html {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgb(51, 50, 50);
+    display: flex;
+    font-family: monospace;
+	/* font-size: 14px; */
+    font-size: 2rem;
+  }
+
+.examples {
+	max-width: 670px;
+	margin: 2em auto;
+	padding: 4em;
+	background: #fff;
+	text-align: center
+}
+
+	.examples section {
+		display: inline-block;
+		width: 24%;
+		min-width: 250px;
+		margin-bottom: 2em;
+		text-align: center;
+		vertical-align: top;
+	}
+	.examples section h3 {
+        font-size: small;
+	}
+
+
+/*************************************
+ * BUTTON BASE
+ */
+
+.ladda-button {
+	position: relative;
+	background: none;
+	padding: 0.8em 1em;
+	font-size: 0.7em;
+}
+
+/* Green button */
+.ladda-button.green {
+	background: #2aca76;
+	color: #fff;
+	border-radius: 2px;
+	border: 1px solid transparent;
+}
+	.ladda-button.green:hover {
+		border-color: rgba( 0, 0, 0, 0.07 );
+		background-color: #2fe688;
+	}
+
+/* Neon Message */
+.neon {
+    color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #0ff,
+      0 0 80px #0ff,
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 150px #0ff;
+  }
+  
+  .container {
+    margin: 0 auto;
+  }
+  
+  
+  h1 {
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+  }

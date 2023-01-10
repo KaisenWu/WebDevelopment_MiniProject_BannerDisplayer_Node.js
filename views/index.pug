@@ -1,0 +1,31 @@
+doctype html 
+html(lang="en") 
+    head 
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="/static/css/index.css")
+    body 
+        article(class="examples")
+            section
+                h3 Echo this message below
+                form(action="/" method="post")
+                    input(type="text"  placeholder="Message Below" name="firstMsg")
+                    br
+                    button(class="ladda-button green expand-left")
+                        span(class="label") Submit
+                        span(class="spinner")
+            section 
+                h3 Echo this message into a new page
+                form(action="/message" method="post")
+                    input(type="text"  placeholder="Message Below" name="secondMsg") 
+                    br
+                    button(class="ladda-button green expand-up")
+                        span(class="label") Submit
+                        span(class="spinner")
+            div(style="background-color: black;" class="container")
+                if firstMsgPug
+                    h1(class="neon")=firstMsgPug
+                else  
+                    h1(class="neon") This Message
