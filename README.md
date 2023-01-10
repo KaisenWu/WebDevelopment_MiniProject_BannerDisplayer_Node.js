@@ -14,3 +14,8 @@ Used npm packages:
 
 Other thchs used:
   PUG templating.
+
+In order to run the application:
+  1. Install the node modules: npm i.
+  2. Start the server: npm app.
+  3. The app run on the localhost:3000.
